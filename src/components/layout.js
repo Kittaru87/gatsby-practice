@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "./container"
-import { Link } from "gatsby"
+import { useStaticQuery, Link, graphql } from "gatsby"
 import "./layout.css"
 
 const ListLink = props => (
@@ -10,12 +10,23 @@ const ListLink = props => (
 )
 
 export default function Layout({ children }) {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+          }
+        }
+      }
+    `
+  )
   return (
     <div>
       <Container>
         <header>
           <Link to="/" className="logo">
-            <h3>MyRadSite</h3>
+            <h3>{data.site.siteMetadata.title}</h3>
           </Link>
           <ul className="unordered-nav-list">
             <ListLink to="/contact/">Contact</ListLink>

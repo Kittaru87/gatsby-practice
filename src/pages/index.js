@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
-import Header from "../components/header"
+import { graphql } from "gatsby"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
       <div>
-        <Header headerText="Hello Gatsby" />
+        <h1>Welcome to {data.site.siteMetadata.title}</h1>
         <p> What a world.</p>
         <img src="https://source.unsplash.com/random/400x200" alt="" />
         <p>
@@ -25,3 +25,13 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
