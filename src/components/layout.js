@@ -18,7 +18,6 @@ export default function Layout({ children }) {
             <h3>MyRadSite</h3>
           </Link>
           <ul className="unordered-nav-list">
-            <ListLink to="/">Home</ListLink>
             <ListLink to="/contact/">Contact</ListLink>
             <ListLink to="/about/">About</ListLink>
             <ListLink to="/about-css-modules/">About CSS Modules</ListLink>

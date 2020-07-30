@@ -2,7 +2,6 @@ import React from "react"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import styles from "./about-css-modules.module.css"
-import { Link } from "gatsby"
 console.log(styles)
 
 const User = props => (
