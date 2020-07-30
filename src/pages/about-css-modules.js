@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../components/header"
-import Container from "../components/container"
+import Layout from "../components/layout"
 import styles from "./about-css-modules.module.css"
 import { Link } from "gatsby"
 console.log(styles)
@@ -18,8 +18,8 @@ const User = props => (
 export default function AboutCSSModules() {
   return (
     <>
-      <Link to="/">Home</Link>
-      <Container>
+      <Layout>
+        <Link to="/">Home</Link>
         <Header headerText="Learning modules in CSS" />
         <p>CSS Modules are cool</p>
         <User
@@ -32,7 +32,7 @@ export default function AboutCSSModules() {
           avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
           excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
         />
-      </Container>
+      </Layout>
     </>
   )
 }
