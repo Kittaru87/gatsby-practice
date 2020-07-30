@@ -3,14 +3,13 @@ import Header from "../components/header"
 import Container from "../components/container"
 import { Link } from "gatsby"
 
-export default function About() {
+export default function AboutCSSModules() {
   return (
     <>
       <Link to="/">Home</Link>
       <Container>
-        <Header headerText="About Gatsby" />
-        <Header headerText="It's pretty cool" />
-        <p>Such wow. Very React.</p>
+        <Header headerText="Learning modules in CSS" />
+        <p>CSS Modules are cool</p>
       </Container>
     </>
   )
