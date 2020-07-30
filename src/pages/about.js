@@ -7,9 +7,10 @@ export default function About() {
   return (
     <>
       <Layout>
-        <Link to="/">Home</Link>
-        <Header headerText="About Gatsby" />
-        <p>Such wow. Very React.</p>
+        <div>
+          <Header headerText="About Gatsby" />
+          <p>Such wow. Very React.</p>
+        </div>
       </Layout>
     </>
   )

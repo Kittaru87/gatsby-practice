@@ -7,7 +7,6 @@ export default function Contact() {
   return (
     <Layout>
       <div>
-        <Link to="/">Home</Link>
         <Header headerText="Contact" />
         <p>Send us a message!</p>
         <p>

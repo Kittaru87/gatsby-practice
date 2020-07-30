@@ -19,7 +19,6 @@ export default function AboutCSSModules() {
   return (
     <>
       <Layout>
-        <Link to="/">Home</Link>
         <Header headerText="Learning modules in CSS" />
         <p>CSS Modules are cool</p>
         <User
