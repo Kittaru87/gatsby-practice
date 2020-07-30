@@ -7,7 +7,7 @@ import Container from "../components/container"
 export default function Home() {
   return (
     <Layout>
-      <div style={{ color: `purple` }}>
+      <div>
         <Link to="/contact/">Contact</Link>
         <Link to="/about/">About</Link>
         <Link to="/about-css-modules/">About CSS Modules</Link>
